@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-primary);
+}
+
+:root{
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F5F5F5;
+    --text-primary-color: #0000;
+    --text-secondary-color: #FF3147;
+}
+
+.contact-us-btn{
+    height: 50px;
+    width: 160px;
+    background-color: var(--text-secondary-color);
+    border: none;
+    padding: 2px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 1.4px;
+    border-radius: 2px;
+}
+
+.contact-us-btn:hover{
+    background-color: #d03747;
+}
+
+nav{
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;  
+}
+
+.nav-link.hover:hover{
+    color: var(--text-secondary-color)  ;
+}
+
+.navbar-nav li a{
+    font-size: 20px;
+}
+
+.hero-section .right img{
+    width: 487px;
+    height: 737px
+}
+
+.hero-section h4{
+    /* font-family: "Cormorant SC", serif; */
+    text-align: left;
+    font-weight: 500;
+    color: var(--text-secondary-color);
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.hero-section h1{
+    text-align: left;
+    /* font-family: "Cormorant SC", sans-serif; */
+    font-size: 60px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+.hero-section p{
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-weight: normal;
+}
+
+.service{
+    background-color: var(--bg-secondary);
+}
+
+.service h2{
+    font-size: 24px;
+    color: var(--text-secondary-color);
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.service h1{
+    font-size: 45px;
+    letter-spacing: 0;
+    font-weight: bold;
+    /* font-family: "Cormorant SC", sans-serif; */
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.service .right p{
+    width: 70%;
+    font-family: "Poppins" sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0;
+
+}
+
+/* Sliding section (Swiper) */
+
+.service .container .sliding-container {
+    max-width: 1200px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .service .container .sliding-container .image-container {
+    max-width: 1200px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+  
+  .service .container .sliding-container .image-container .card {
+    position: relative;
+    min-width: 380px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .service .container .sliding-container .image-container .card .card-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  
+  .service .container .sliding-container .image-container .card .card-body {
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    bottom: 0;
+    position: absolute;
+    background: #ff3147;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 5px 12px;
+    transition: 1s;
+  }
+  
+  .service .container .sliding-container .image-container .card:hover .card-body {
+    top: 0;
+  }
+  
+  .service
+    .container
+    .sliding-container
+    .image-container
+    .card
+    .card-body
+    .icon-img {
+    width: 50px;
+  }
+  
+  .service
+    .container
+    .sliding-container
+    .image-container
+    .card
+    .card-body
+    .h3-title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .service
+    .container
+    .sliding-container
+    .image-container
+    .card
+    .card-body
+    .paragraph-text {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .service .container .sliding-container .image-container .card .card-body .btn-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 40px;
+    border-radius: 5px;
+    background: #fff;
+    gap: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ff3147;
+  }
+  
+  .service .container .sliding-container .dot-slide {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service .container .sliding-container .dot-slide .dot {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .service .container .sliding-container .dot-slide .dot img {
+    cursor: pointer;
+  }
+  
