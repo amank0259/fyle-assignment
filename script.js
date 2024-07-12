@@ -58,7 +58,6 @@ tabs.each(function (index) {
     $(this).on("click", function () {
         images.each(function () {
             $(this).removeClass("active");
-            console.log("this is working");
         });
         tabs.each(function () {
             $(this).removeClass("active");
